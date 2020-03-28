@@ -8,19 +8,51 @@
 }
 /*---------------------Header*/
 
-#nav-bar li {
+#nav-bar {
     list-style: none;
     font-family: 'Merriweather', sans-serif;
     font-weight: 700;
     float: right;
     padding-top: 30px;
-    padding-right: 40px;
     font-size: 150%;
     
 }
 
-#nav-bar li a {
+#nav-bar a {
     text-decoration: none;
     color: #3c0754;
+    padding-right: 40px;
+}
+
+#nav-bar .icon {
+    display: none;
+}
+
+/*---------------------Responsive Sizing*/
+
+@media screen and (max-width: 600px) {
+  #nav-bar a {
+      display: none;
+      }
+  #nav-bar a.icon {
+    display: block;
+    float: left;
+    font-size: 150%;
+    padding-bottom: 30px;
+    }
+
+  #nav-bar.responsive {
+    position: relative;
+    }
+
+  #nav-bar.responsive .icon {
+    float: right;
+  }
+
+  #nav-bar.responsive a {
+    display: block;
+    text-align: right;
+    padding-bottom: 5px;
+  }
 }
 
