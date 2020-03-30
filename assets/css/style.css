@@ -6,6 +6,17 @@
   border: 0;
   box-sizing: border-box;
 }
+/*---------------------Hovers*/
+
+#introduction button:hover {
+    background-color:#003df2; 
+    
+}
+
+#nav-bar a:hover {
+    text-decoration: underline;
+}
+
 /*---------------------Header*/
 
 #nav-bar {
@@ -13,8 +24,20 @@
     font-weight: 700;
     float: right;
     padding-top: 30px;
-    font-size: 150%;
+    font-size: 25px;
     
+}
+
+#logo{
+    float: left;
+    color: #3c0754;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    border: 2px solid;
+    padding: 0rem 0.7rem;
+    margin-top: 15px;
+    margin-left: 40px;
 }
 
 #nav-bar a {
@@ -30,7 +53,7 @@
 /*--------------------- Introduction*/
 
 #introduction {
-    padding-top: 8%;
+    padding-top: 8rem;
     text-align: center;
 }
 
@@ -83,9 +106,15 @@ hr.solid {
 /*---------------------Responsive Sizing*/
 
 @media screen and (max-width: 600px) {
+
+    #logo {
+        margin-top:30px;
+    }
+
   #nav-bar a {
       display: none;
       }
+
   #nav-bar a.icon {
     display: block;
     float: left;
