@@ -13,7 +13,7 @@
 <body>
 	<header>
 		<div id="nav-bar" class="top-bar">
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<a href="javascript:void(0);" class="icon" onclick="navigation()">
 				<i class="fa fa-bars"></i>
 			</a>
 			<a href="">EXPERIENCE</a>
@@ -21,10 +21,21 @@
 			<a href="">CONTACT</a>
 		</div>
 	</header>
+    
+    <div>
+        <div><h1>HI I'M ANNA</h1></div> 
+        <h3>I am a full stack developer,<br>based in Sligo, Ireland.</h3>
+        <button onclick="introduction()">Quick intro...</button>
+        <div id="intro">
+            <p>I am an enthusiastic individual with a passion for design. I love finding
+            creative solutions to any problem.</p>
+        </div>
+
+    </div>
 
     <!--Responsive Nav Bar Script-->
 	<script>
-		function myFunction() {
+		function navigation() {
             var x = document.getElementById("nav-bar");
                 if (x.className === "top-bar") {
                     x.className += " responsive";
@@ -33,6 +44,18 @@
                 }
             }
 	</script>
+
+    <!--Intro button toggle -->
+   <script>
+        function introduction() {
+            var x = document.getElementById("intro");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+    </script>
 </body>
 
 </html>
