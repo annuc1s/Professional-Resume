@@ -6,6 +6,22 @@
   border: 0;
   box-sizing: border-box;
 }
+/*---------------------Background*/
+header {
+    min-height: 100vh;
+    padding: 0 2rem;
+    width: 100%;
+    background-color: rgba(255, 231, 230, 0.2);
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 /*---------------------Hovers*/
 
 #introduction button:hover {
@@ -97,10 +113,11 @@ hr.solid {
 #intro p {
     padding: 30px;
     font-family: 'Merriweather', sans-serif;
-    background-color: pink;
+    background-color: rgba(255, 231, 230, 0.6);
     margin-left: 15%;
     margin-right: 15%;
     line-height: 30px;
+    border-radius: 4px;
 }
 
 /*---------------------Responsive Sizing*/
