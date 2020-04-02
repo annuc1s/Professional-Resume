@@ -7,11 +7,14 @@
   box-sizing: border-box;
 }
 /*---------------------Background*/
+body {
+    background-color: rgba(255, 231, 230, 0.2);  
+}
+
 header {
     min-height: 100vh;
     padding: 0 2rem;
     width: 100%;
-    background-color: rgba(255, 231, 230, 0.2);
 }
 
 .background {
@@ -119,6 +122,72 @@ hr.solid {
     line-height: 30px;
     border-radius: 4px;
 }
+
+/*---------------------Section Heading*/
+
+.section-heading{
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    float: left;
+    font-size: 3rem;
+    padding-left: 10%;
+    text-transform: uppercase;
+    color: #3c0754;
+    
+}
+
+/*---------------------Experience*/
+
+.container {
+    padding-top: 80px;
+    margin: 0;
+    margin-right: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.nav li a {
+    position: relative;
+    display: block;
+    padding: 10px 25px;
+    color: #78063f;
+    font-size: 4rem;
+    float: center;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #003df2;
+    width: 120%;
+}
+
+.nav li a:focus, 
+.nav li a:hover {
+    background-color:  rgba(255, 231, 230, 0.6);
+}
+
+.nav-tabs li.active a, 
+.nav-tabs li.active a:focus, 
+.nav-tabs li.active a:hover {
+    color: white;
+    background-color: #003df2;
+}
+
+.tab-pane h3{
+    font-family: 'Merriweather', sans-serif;
+    color: #78063f;
+    font-weight: 600;
+    
+}
+
+.tab-pane p {
+    padding: 30px;
+    font-family: 'Merriweather', sans-serif;
+    background-color: rgba(255, 231, 230, 0.6);
+    line-height: 30px;
+    border-radius: 4px;
+    width: 120%;
+}
+
 
 /*---------------------Responsive Sizing*/
 
