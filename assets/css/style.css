@@ -138,6 +138,10 @@ hr.solid {
 
 /*---------------------Experience*/
 
+#experience {
+    padding-top: 10px;
+}
+
 .container {
     padding-top: 80px;
     margin: 0;
@@ -188,6 +192,18 @@ hr.solid {
     width: 120%;
 }
 
+/*---------------------Work*/
+
+    #work{
+    padding-top: 40px;
+    }
+
+    .row {
+    padding-top: 80px;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
 /*---------------------Responsive Sizing*/
 
