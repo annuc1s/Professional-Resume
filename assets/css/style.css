@@ -54,7 +54,7 @@ header {
     font-weight: 700;
     font-size: 40px;
     border: 2px solid;
-    padding: 0rem 0.7rem;
+    padding: 0rem 1.5rem;
     margin-top: 15px;
     margin-left: 40px;
 }
@@ -156,7 +156,6 @@ hr.solid {
     padding: 10px 25px;
     color: #78063f;
     font-size: 4rem;
-    float: center;
 }
 
 .nav-tabs {
@@ -195,15 +194,59 @@ hr.solid {
 /*---------------------Work*/
 
     #work{
-    padding-top: 40px;
+        padding-top: 40px;
     }
 
     .row {
-    padding-top: 80px;
-    margin: 0;
-    padding-left: 10%;
-    padding-right: 10%;
-}
+        padding-top: 80px;
+        margin: 0;
+        padding-left: 10%;
+        padding-right: 10%;
+        column-gap:
+    }
+
+    .col-md-6{
+        padding: 0;
+    }
+    .project-img {
+        height: 25rem;
+        width: 95%;
+        margin: 0;
+        border-radius: 4px;
+        border: 2px solid #003df2;
+        box-shadow: 1px 2px 20px rgb(255, 231, 230);
+        position:relative;
+        text-align: center;
+    }
+
+    .img2{
+        float: right;
+    }
+
+    .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 231, 230, 0.6);
+        width: 95%;
+        height: 100%;
+        margin-left: -14px;
+        border-radius: 4px;
+        border: 2px solid #003df2;
+    }
+
+    .hover-text p {
+        font-family: 'Merriweather', sans-serif;
+        text-align: center;
+        padding: 15% 10% 15% 10%;
+        color: #78063f;
+    }
+
+    p:hover {
+        color: #003df2;
+    }
+
 
 /*---------------------Responsive Sizing*/
 
