@@ -7,8 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://kit.fontawesome.com/a65927cba6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script href="assets/js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Resume | Anna Steindala</title>
 </head>
@@ -107,20 +109,21 @@
 				</div>
 			</div>
 		</div>
+                <!--Github Repos-->
+		<div class="other-projects">
+            <h3>Other projects:</h3>
+			<ul id="githubrepos"></ul>
+		</div>
+	</section>
 
-               <div>
-            <ul id="githubrepos"></ul>
-        </div>
-    </section>
 
+	<script href="assets/js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <script href="assets/js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!--Responsive Nav Bar Script-->
-    <script>
-    $(document).ready(function() {
+	<!--Responsive Nav Bar Script-->
+	<script>
+		$(document).ready(function() {
         function navigation() {
             var x = document.getElementById("nav-bar");
             if (x.className === "top-bar") {
@@ -129,6 +132,7 @@
                 x.className = "top-bar";
             }
         }
+    
         // Intro button toggle
         function introduction() {
             var x = document.getElementById("intro");
@@ -138,7 +142,7 @@
                 x.style.display = "block";
             }
         }
-
+    
         //Displaying github repos by using Github API
         function fetchGithubRepos(username) {
             const repo_url = `https://api.github.com/users/${username}/repos`;
@@ -156,8 +160,8 @@
         introduction();
         fetchGithubRepos('annuc1s');
     });
-    </script>
-
+	</script>
+    
 	<!--Particle background, created by Marc Brüderlin-->
 	<canvas class="background" width="163" height="625" style="width: 100%; height: 100%;"></canvas>
 	<script src="assets/js/particles.js"></script>
