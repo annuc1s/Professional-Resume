@@ -8,9 +8,7 @@
 	<script src="https://kit.fontawesome.com/a65927cba6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-	<script rel="text/javascript" href="assets/js/script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Resume | Anna Steindala</title>
 </head>
@@ -112,7 +110,10 @@
 
         <div id="github-repos"></div>
 	</section>
-
+    <script rel="text/javascript" href="assets/js/script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
 	<!--Responsive Nav Bar Script-->
 	<script>
 		function navigation() {
@@ -123,10 +124,10 @@
                     x.className = "top-bar";
                 }
             }
-	</script>
+
 
 	<!--Intro button toggle -->
-	<script>
+	
 		function introduction() {
             var x = document.getElementById("intro");
                 if (x.style.display === "block") {
@@ -135,6 +136,13 @@
                     x.style.display = "block";
                 }
             }
+           
+            // A $( document ).ready() block.
+$( document ).ready(function() {
+   
+                fetchGithubRepos('annuc1s')
+            
+});
 	</script>
 
 	<!--Particle background, created by Marc Brüderlin-->

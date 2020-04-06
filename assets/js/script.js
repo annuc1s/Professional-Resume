@@ -1,9 +1,18 @@
 //Displaying github repos by using Github API
 
-var fetchUrl = require("fetch").fetchUrl;
 function fetchGithubRepos(username) {
-    let repos;
     const repo_url = `https://api.github.com/users/${username}/repos`;
+    fetch(repo_url)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  });
+}
+
+    /*let repos;
+    
     fetchUrl(repo_url, function (error, meta, body) {
         repos = JSON.parse(body.toString());
         const listItemsHTML = repos.map((repo) => {
