@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://kit.fontawesome.com/a65927cba6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script href="assets/js/script.js"></script>
+	<script href="assets/js/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -24,7 +24,7 @@
 			</a>
 			<a class="nav-btn" href="#experience">EXPERIENCE</a>
 			<a class="nav-btn" href="#work">WORK</a>
-			<a class="nav-btn" href="">CONTACT</a>
+			<a class="nav-btn" href="#contact">CONTACT</a>
 		</div>
 
 
@@ -109,13 +109,26 @@
 				</div>
 			</div>
 		</div>
-                <!--Github Repos-->
+		<!--Github Repos-->
 		<div class="other-projects">
-            <h3>Other projects:</h3>
+			<h3>Other projects:</h3>
 			<ul id="githubrepos"></ul>
 		</div>
 	</section>
 
+	<section id="contact">
+		<div class="section-heading">Contact me</div>
+		<div class="prompt">
+			<h3>Lets work together</h3>
+		</div>
+		<form action="contact_form" class="contact-form">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="text" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <textarea name="message" id="message" rows="10" placeholder="Your message..." required></textarea>
+            <input type="submit" value="submit">
+		</form>
+	</section>
 
 	<script href="assets/js/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -161,7 +174,7 @@
         fetchGithubRepos('annuc1s');
     });
 	</script>
-    
+
 	<!--Particle background, created by Marc Brüderlin-->
 	<canvas class="background" width="163" height="625" style="width: 100%; height: 100%;"></canvas>
 	<script src="assets/js/particles.js"></script>

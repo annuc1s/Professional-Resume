@@ -133,6 +133,7 @@ hr.solid {
     padding-left: 10%;
     text-transform: uppercase;
     color: #3c0754;
+    width: 100%;
     
 }
 
@@ -290,6 +291,50 @@ hr.solid {
     font-size: 2rem;
     padding-top: 10px;
     color: #3c0754;
+}
+
+/*---------------------Contact*/
+
+#contact{
+    position: relative;
+    margin-top: 12rem;
+}
+
+.contact-form{
+    padding-top: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 40px;
+}
+
+.prompt h3 {
+    font-family: 'Merriweather', sans-serif;
+    color: #78063f;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-form input[type=text],  textarea {
+  
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    
+}
+
+input[type=submit] {
+    padding: 12px;
+    border-radius: 4px;
+    width: 20%;
+    text-transform: uppercase;
+ 
 }
 
 /*---------------------Responsive Sizing*/
