@@ -133,8 +133,7 @@ hr.solid {
     padding-left: 10%;
     text-transform: uppercase;
     color: #3c0754;
-    width: 100%;
-    
+    width: 100%; 
 }
 
 /*---------------------Experience*/
@@ -296,45 +295,63 @@ hr.solid {
 /*---------------------Contact*/
 
 #contact{
-    position: relative;
-    margin-top: 12rem;
+    clear: both;
+    padding-top: 40px;
+}
+
+.prompt {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #3c0754;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    padding-bottom: 10px;
+    padding-top: 0px;
 }
 
 .contact-form{
-    padding-top: 40px;
+    font-family: 'Merriweather', sans-serif;
+    padding-top: 20px;
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 40px;
-}
-
-.prompt h3 {
-    font-family: 'Merriweather', sans-serif;
-    color: #78063f;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-    width: 100%;
+    
 }
 
 .contact-form input[type=text],  textarea {
-  
+    
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #003df2;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
+    margin-top: 4px;
+    margin-bottom: 10px;
     resize: vertical;
     
 }
 
 input[type=submit] {
-    padding: 12px;
-    border-radius: 4px;
-    width: 20%;
+    padding: 10px 20px 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    background-color: #78063f;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
     text-transform: uppercase;
- 
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color:#003df2;
+}
+
+.contact-form input[type=text]:hover,  textarea:hover{
+    background-color: rgba(255, 231, 230, 0.6);
 }
 
 /*---------------------Responsive Sizing*/
