@@ -13,6 +13,14 @@
 
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Resume | Anna Steindala</title>
+    <!--EmailJS API installation-->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function(){
+      emailjs.init("user_dYXdGeorqYYUJK0lclK57");
+      
+   })();
+	</script>
 </head>
 
 <body>
@@ -118,14 +126,16 @@
 
 	<section id="contact">
 		<div class="prompt">Lets work together</div>
-			<form action="contact_form" class="contact-form">
-				<input type="text" id="name" name="name" placeholder="Name" required>
-				<input type="text" id="email" name="email" placeholder="Email" required>
-				<input type="text" id="subject" name="subject" placeholder="Subject" required>
-				<textarea name="message" id="message" rows="10" placeholder="Your message..." required></textarea>
-				<input type="submit" value="submit">
+		<form action="contact_form" class="contact-form" onsubmit="return sendMail(this);">
+			<input type="text" id="name" name="name" placeholder="Name" required>
+			<input type="text" id="email" name="email" placeholder="Email" required>
+			<input type="text" id="subject" name="subject" placeholder="Subject" required>
+			<textarea name="message" id="message" rows="10" placeholder="Your message..." required></textarea>
+			<input type="submit" value="submit">
 		    </form>
 	</section>
+
+    <script src="assets/js/sendEmail.js"></script>
 
 	<script href="assets/js/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
