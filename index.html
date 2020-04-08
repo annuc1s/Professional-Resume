@@ -12,34 +12,34 @@
 
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Resume | Anna Steindala</title>
-    <!--EmailJS API installation-->
+	<!--EmailJS API installation-->
 	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 	<script>
 		(function(){
-      emailjs.init("user_dYXdGeorqYYUJK0lclK57");
-      
-   })();
+      emailjs.init("user_dYXdGeorqYYUJK0lclK57"); 
+        })();
 	</script>
 </head>
 
 <body>
-        <!--Back to top function see javascript in assets/js/backToTop.js-->
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+	<!--Back to top function see javascript in assets/js/backToTop.js-->
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 	<header>
-        <!--Top Navigation Bar-->
+	<!--Top Navigation Bar-->
 		<div id="logo">AS</div>
 		<div id="nav-bar">
 			<a class="nav-btn" href="#experience">EXPERIENCE</a>
 			<a class="nav-btn" href="#work">WORK</a>
 			<a class="nav-btn" href="#contact">CONTACT</a>
 		</div>
-
+    <!--Overwiev introduction to site owner-->
 		<div id="introduction">
 			<h1>HI, I'M ANNA</h1>
 			<hr class="solid">
 			<h3>I am a Fullstack Web Developer,<br>based in Sligo, Ireland.</h3>
+    <!--Button that toggles overview text, see javascript in assets/js/script.js-->
 				<button onclick="introduction()">Quick intro...</button>
-				<div id="intro" >
+				<div id="intro">
 					<p>I am an enthusiastic, motivated individual with a passion for design.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint veniam
 						earum ullam sapiente alias, dicta accusantium velit iste quidem quisquam
@@ -48,20 +48,18 @@
 				</div>
 		</div>
 	</header>
-        
+
+    <!--Experience section covers interests/experience of site owner, displayed in tab format-->
 	<section id="experience">
 		<div class="section-heading">Experience</div>
-
-		<!--Bootstrap Toggleable / Dynamic Tabs, sample code from w3schools-->
+	<!--Bootstrap Toggleable / Dynamic Tabs, sample code from w3schools-->
 		<div class="container">
-
 			<ul class="nav nav-tabs">
 				<li class="active"><a data-toggle="tab" href="#web-development"><i class="fas fa-code"></i></a></li>
 				<li><a data-toggle="tab" href="#interior-architecture"><i class="fas fa-pencil-ruler"></i></a></li>
 				<li><a data-toggle="tab" href="#customer-service"><i class="fas fa-users"></i></a></li>
 				<li><a data-toggle="tab" href="#photography"><i class="fas fa-camera"></i></a></li>
 			</ul>
-
 			<div class="tab-content">
 				<div id="web-development" class="tab-pane fade in active">
 					<h3>Web Development</h3>
@@ -85,16 +83,17 @@
 				</div>
 			</div>
 		</div>
-
 	</section>
 
+    <!--Work experience section, displaying milestone projects and other repos-->
 	<section id="work">
 		<div class="section-heading">Work</div>
 		<div class="row">
 			<div class="col-md-6 col-sm-6 project-img">
 				<img src="assets/images/project1.jpg" alt="Travel tip website" class="image">
-				<!--Project description appears when image hovered over-->
+	<!--Project description appears when image hovered over-->
 				<div class="hover-text">
+    <!--Project description is anchored to deployed project-->
 					<div class="project-description">
 						<a href="https://annuc1s.github.io/Simple-Guide/" target="_blank">
 							Project description
@@ -104,42 +103,45 @@
 			</div>
 			<div class="col-md-6 col-sm-6 project-img">
 				<img class="image" src="assets/images/project2.jpg" alt="Designers resume">
-				<!--Project description appears when image hovered over-->
+	<!--Project description appears when image hovered over-->
 				<div class="hover-text">
 					<div class="project-description">
-						<a href="https://annuc1s.github.io/Simple-Guide/" target="_blank">
+    <!--Project description is anchored to deployed project-->
+						<a href="https://annuc1s.github.io/Professional-Resume/" target="_blank">
 							Project description
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!--Github Repos-->
+	<!--Github Repos, see javascript in assets/js/sendEmail.js-->
 		<div class="other-projects">
 			<h3>Other projects:</h3>
 			<ul id="githubrepos"></ul>
 		</div>
 	</section>
 
+    <!--Contact section with contact form-->
 	<section id="contact">
 		<h2 class="prompt">Lets work together</h2>
+    <!--Contact form activated using emailJS, see javascript in assets/js/sendEmail.js-->
 		<form action="contact_form" class="contact-form" onsubmit="return sendMail(this);">
 			<input type="text" id="name" name="name" placeholder="Name" required>
 			<input type="text" id="email" name="email" placeholder="Email" required>
 			<input type="text" id="subject" name="subject" placeholder="Subject" required>
 			<textarea name="message" id="message" rows="10" placeholder="Your message..." required></textarea>
 			<input type="submit" value="submit">
-		    </form>
+		</form>
 	</section>
 
-    <script src="assets/js/backToTop.js"></script>
-    <script src="assets/js/sendEmail.js"></script>
+    <!--Links to external js files-->
+	<script src="assets/js/backToTop.js"></script>
+	<script src="assets/js/sendEmail.js"></script>
 	<script src="assets/js/script.js"></script>
-    <script src="assets/js/githubRepos.js"></script>
+	<script src="assets/js/githubRepos.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 
 	<!--Particle background, created by Marc Brüderlin-->
 	<canvas class="background" width="163" height="625" style="width: 100%; height: 100%;"></canvas>
