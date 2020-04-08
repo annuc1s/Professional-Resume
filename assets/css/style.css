@@ -449,6 +449,8 @@ hr.solid {
 .hover-text {
     width: 100%;
     margin-left: 0;
+    height: 20rem;
+    top: 46%;
 }
 
 .other-projects h3 {
@@ -474,4 +476,5 @@ hr.solid {
     padding-bottom: 0;
     font-size: 2.7rem;
 }
+
 }
