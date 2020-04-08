@@ -13,9 +13,9 @@ function sendMail(contactForm) {
             function (error) {
                 console.log("ERROR", error);
             }
-        )
+        );
     return false;
-};
+}
 
 //form resets after submission
 $(".reset").click(function () {
