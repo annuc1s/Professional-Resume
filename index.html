@@ -7,15 +7,14 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://kit.fontawesome.com/a65927cba6.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script href="assets/js/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Resume | Anna Steindala</title>
     <!--EmailJS API installation-->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-	<script type="text/javascript">
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script>
 		(function(){
       emailjs.init("user_dYXdGeorqYYUJK0lclK57");
       
@@ -29,10 +28,7 @@
 	<header>
         <!--Top Navigation Bar-->
 		<div id="logo">AS</div>
-		<div id="nav-bar" class="top-bar">
-			<a href="javascript:void(0);" class="icon" onclick="navigation()">
-				<i class="fa fa-bars"></i>
-			</a>
+		<div id="nav-bar">
 			<a class="nav-btn" href="#experience">EXPERIENCE</a>
 			<a class="nav-btn" href="#work">WORK</a>
 			<a class="nav-btn" href="#contact">CONTACT</a>
@@ -43,7 +39,7 @@
 			<hr class="solid">
 			<h3>I am a Fullstack Web Developer,<br>based in Sligo, Ireland.</h3>
 				<button onclick="introduction()">Quick intro...</button>
-				<div id="intro">
+				<div id="intro" >
 					<p>I am an enthusiastic, motivated individual with a passion for design.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint veniam
 						earum ullam sapiente alias, dicta accusantium velit iste quidem quisquam
@@ -52,12 +48,11 @@
 				</div>
 		</div>
 	</header>
-
+        
 	<section id="experience">
 		<div class="section-heading">Experience</div>
 
 		<!--Bootstrap Toggleable / Dynamic Tabs, sample code from w3schools-->
-
 		<div class="container">
 
 			<ul class="nav nav-tabs">
@@ -127,7 +122,7 @@
 	</section>
 
 	<section id="contact">
-		<div class="prompt">Lets work together</div>
+		<h2 class="prompt">Lets work together</h2>
 		<form action="contact_form" class="contact-form" onsubmit="return sendMail(this);">
 			<input type="text" id="name" name="name" placeholder="Name" required>
 			<input type="text" id="email" name="email" placeholder="Email" required>
@@ -139,51 +134,12 @@
 
     <script src="assets/js/backToTop.js"></script>
     <script src="assets/js/sendEmail.js"></script>
+	<script src="assets/js/script.js"></script>
+    <script src="assets/js/githubRepos.js"></script>
 
-	<script href="assets/js/script.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-	<!--Responsive Nav Bar Script-->
-	<script>
-		$(document).ready(function() {
-        function navigation() {
-            var x = document.getElementById("nav-bar");
-            if (x.className === "top-bar") {
-                x.className += "responsive";
-            } else {
-                x.className = "top-bar";
-            }
-        }
-    
-        // Intro button toggle
-        function introduction() {
-            var x = document.getElementById("intro");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    
-        //Displaying github repos by using Github API
-        function fetchGithubRepos(username) {
-            const repo_url = `https://api.github.com/users/${username}/repos`;
-            fetch(repo_url)
-                .then((response) => {
-                    return response.json();
-                })
-                .then((repos) => {
-                    repos.map((repo) => {
-                        $(`<li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>`).appendTo("#githubrepos");
-                    });
-                });
-        }
-        navigation();
-        introduction();
-        fetchGithubRepos('annuc1s');
-    });
-	</script>
 
 	<!--Particle background, created by Marc Brüderlin-->
 	<canvas class="background" width="163" height="625" style="width: 100%; height: 100%;"></canvas>
